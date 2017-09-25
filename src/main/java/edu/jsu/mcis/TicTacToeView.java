@@ -85,7 +85,7 @@ public class TicTacToeView extends JPanel implements ActionListener {
            the View and disable them to prevent further entries.  (Hint: the
            JButton class provides a "setEnabled()" method for this.) */
            
-        if (model.getResult() != Result.NONE){
+        if (model.getResult().toString() != "none"){
 			for (int i = 0; i < width; i++){
 				for (int j = 0; j < width; j++){
 					squares[i][j].setEnabled(false);
